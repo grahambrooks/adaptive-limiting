@@ -29,7 +29,7 @@ async fn main() -> std::io::Result<()> {
             .route("/", web::get().to(handlers::hello))
             .route("/response/time", web::post().to(handlers::set_response_time))
     })
-        .bind(format!("127.0.0.1:{}", listen_port))?  // Bind
+        .bind(format!("0.0.0.0:{}", listen_port))?  // Bind
         .run()
         .await
 }
