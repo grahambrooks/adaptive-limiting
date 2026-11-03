@@ -12,4 +12,3 @@ The project contains 3 components
 5. A rust config application that updates the latency or error rate for the hello service.
 
 The proxy and web service are composed into a k8s application. The proxy endpoint is forwarded to the host for local access.
-
